@@ -3,8 +3,8 @@ display: flex;
 gap: 30px;
 }
 .lll{
-width: 150px;
-max-width: 150px;
+width: 250px;
+
 height: aute;
 background-color: #27ae60;
 color: black;
@@ -116,6 +116,16 @@ font-size: 10px
 padding: 6px;
 
 }
-
-
+.title{
+    font-size: 20px;
+}
+.word p{
+     font-size: 14px;
+}
+.word h2{
+     font-size: 16px;
+}
+.word ul{
+    font-size: 14px;
+}
 }
