@@ -106,19 +106,29 @@ color: white;
 }
 
 @media (max-width: 768px) {
-    .lessons {
-        flex-direction: column;
-    }
     .lll {
-        width: 100%;
+        width: 120px;
+        min-width: 120px;
+        font-size: 11px;
+    }
+    .lll a {
+        padding: 8px;
+    }
+    .back {
+        font-size: 14px;
     }
     .mmm {
         margin-right: 0;
         padding: 10px;
-        max-width: 100%;
         overflow-x: hidden;
     }
-    body{
+    body {
         overflow-x: hidden;
+    }
+    table {
+        font-size: 11px;
+        width: 100%;
+        display: block;
+        overflow-x: auto;
     }
 }
