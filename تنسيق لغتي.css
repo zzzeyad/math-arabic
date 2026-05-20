@@ -3,7 +3,8 @@ display: flex;
 gap: 30px;
 }
 .lll{
-width: 250px;
+width: 150px;
+max-width: 150px;
 height: aute;
 background-color: #27ae60;
 color: black;
@@ -103,4 +104,18 @@ color: white;
 .fourtd{
 background-color: #0B4F42;
 color: white;
+}
+
+@media (max-width: 768px) {
+.lll {
+width: 100px;
+min-width: 100px;
+font-size: 10px
+}
+.lll a {
+padding: 6px;
+
+}
+
+
 }
