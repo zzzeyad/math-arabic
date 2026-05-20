@@ -115,5 +115,10 @@ color: white;
     .mmm {
         margin-right: 0;
         padding: 10px;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
     }
 }
