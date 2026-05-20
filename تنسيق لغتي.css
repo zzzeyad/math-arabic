@@ -105,4 +105,15 @@ background-color: #0B4F42;
 color: white;
 }
 
-
+@media (max-width: 768px) {
+    .lessons {
+        flex-direction: column;
+    }
+    .lll {
+        width: 100%;
+    }
+    .mmm {
+        margin-right: 0;
+        padding: 10px;
+    }
+}
