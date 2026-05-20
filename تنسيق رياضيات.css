@@ -126,3 +126,27 @@ table,td{
    background-color: #4A154B;
   color: white;
 }
+
+@media (max-width: 768px) {
+.lll {
+width: 150px;
+min-width: 150px;
+font-size: 10px
+}
+.lll a {
+padding: 6px;
+
+}
+.title{
+    font-size: 20px;
+}
+.word p{
+     font-size: 14px;
+}
+.word h2{
+     font-size: 16px;
+}
+.word ul{
+    font-size: 14px;
+}
+}
