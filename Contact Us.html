@@ -1,23 +1,150 @@
 <!DOCTYPE html>
-
-
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8">
-<title></title>
-
-<style></style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - موقع الرياضيات واللغة العربية</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            background-color: #ffffff;
+            max-width: 600px;
+            width: 100%;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-top: 20px;
+        }
+        
+        
+        .btn-home {
+            background-color: #7f8c8d;
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn-home:hover {
+            background-color: #95a5a6;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p.description {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #34495e;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        input:focus, textarea:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .direct-contact {
+            margin-top: 30px;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        .direct-contact a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer-nav {
+            text-align: center;
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px dashed #ccc;
+        }
+    </style>
 </head>
 <body>
-    <h1>اتصل بنا</h1>
 
-<p>نرحب بجميع استفساراتكم وملاحظاتكم.</p>
+   
 
-<p>يمكنكم التواصل معنا عبر البريد الإلكتروني:</p>
-<p><strong>eyadtitans@hotmail.com</strong></p>
+    <div class="container">
+        <h1>اتصل بنا</h1>
+        <p class="description">يسعدنا استقبال استفساراتكم واقتراحاتكم لتطوير الموقع التعليمي.</p>
+        
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" placeholder="اكتب اسمك هنا" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">نص الرسالة:</label>
+                <textarea id="message" name="message" rows="5" placeholder="اكتب رسالتك أو اقتراحك هنا..." required></textarea>
+            </div>
+            
+            <button type="submit">إرسال الرسالة</button>
+        </form>
 
-<p>نحرص على الرد خلال 24 إلى 48 ساعة.</p>
+        <div class="direct-contact">
+            <p>أو يمكنك مراسلتنا مباشرة عبر البريد الإلكتروني:</p>
+            <p><a href="mailto:your-email@gmail.com">your-email@gmail.com</a></p>
+        </div>
+
+        <div class="footer-nav">
+            <a href="index.html" class="btn-home" style="display: inline-block; width: auto;">رجوع للصفحة الرئيسية</a>
+        </div>
+    </div>
 
 </body>
 </html>
