@@ -1,0 +1,52 @@
+[debug] [2026-05-23T03:06:34.562Z] ----------------------------------------------------------------------
+[debug] [2026-05-23T03:06:34.571Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Makram Alabsi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2026-05-23T03:06:34.572Z] CLI Version:   15.18.0
+[debug] [2026-05-23T03:06:34.572Z] Platform:      win32
+[debug] [2026-05-23T03:06:34.573Z] Node Version:  v24.16.0
+[debug] [2026-05-23T03:06:34.573Z] Time:          Sat May 23 2026 06:06:34 GMT+0300 (التوقيت العربي الرسمي)
+[debug] [2026-05-23T03:06:34.574Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-05-23T03:06:41.513Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-05-23T03:06:41.514Z] > authorizing via signed-in user (eyadtitans@hotmail.com)
+[debug] [2026-05-23T03:06:41.515Z] [iam] checking project math-arabic-2026 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-05-23T03:06:41.517Z] Checked if tokens are valid: true, expires at: 1779508896040
+[debug] [2026-05-23T03:06:41.518Z] Checked if tokens are valid: true, expires at: 1779508896040
+[debug] [2026-05-23T03:06:41.520Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/math-arabic-2026:testIamPermissions [none]
+[debug] [2026-05-23T03:06:41.520Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/math-arabic-2026:testIamPermissions  x-goog-user-project=math-arabic-2026
+[debug] [2026-05-23T03:06:41.521Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/math-arabic-2026:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-05-23T03:06:42.528Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/math-arabic-2026:testIamPermissions 200
+[debug] [2026-05-23T03:06:42.529Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/math-arabic-2026:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-05-23T03:06:42.530Z] Checked if tokens are valid: true, expires at: 1779508896040
+[debug] [2026-05-23T03:06:42.530Z] Checked if tokens are valid: true, expires at: 1779508896040
+[debug] [2026-05-23T03:06:42.531Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/math-arabic-2026 [none]
+[debug] [2026-05-23T03:06:43.219Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/math-arabic-2026 200
+[debug] [2026-05-23T03:06:43.219Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/math-arabic-2026 {"projectId":"math-arabic-2026","projectNumber":"783078031093","displayName":"math-arabic-2026","name":"projects/math-arabic-2026","resources":{"hostingSite":"math-arabic-2026"},"state":"ACTIVE","etag":"1_11708dd3-57da-4676-b979-6ef1b77e76d4"}
+[info] 
+[info] === Deploying to 'math-arabic-2026'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-05-23T03:06:43.227Z] Checked if tokens are valid: true, expires at: 1779508896040
+[debug] [2026-05-23T03:06:43.228Z] Checked if tokens are valid: true, expires at: 1779508896040
+[debug] [2026-05-23T03:06:43.228Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/math-arabic-2026/sites/math-arabic-2026 [none]
+[debug] [2026-05-23T03:06:45.507Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/math-arabic-2026/sites/math-arabic-2026 200
+[debug] [2026-05-23T03:06:45.508Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/math-arabic-2026/sites/math-arabic-2026 {"name":"projects/math-arabic-2026/sites/math-arabic-2026","defaultUrl":"https://math-arabic-2026.web.app","type":"DEFAULT_SITE"}
+[debug] [2026-05-23T03:06:45.509Z] Checked if tokens are valid: true, expires at: 1779508896040
+[debug] [2026-05-23T03:06:45.510Z] Checked if tokens are valid: true, expires at: 1779508896040
+[debug] [2026-05-23T03:06:45.510Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/math-arabic-2026/versions [none]
+[debug] [2026-05-23T03:06:45.510Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/math-arabic-2026/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-05-23T03:06:47.882Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/math-arabic-2026/versions 200
+[debug] [2026-05-23T03:06:47.882Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/math-arabic-2026/versions {"name":"projects/783078031093/sites/math-arabic-2026/versions/058fa5c739d84b60","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[math-arabic-2026]: beginning deploy... 
+[info] i  hosting[math-arabic-2026]: found 94484 files in . 
+[debug] [2026-05-23T03:07:42.985Z] [hosting] uploading with 200 concurrency
+[debug] [2026-05-23T03:07:42.987Z] [hosting] hash cache [] not populated
+[debug] [2026-05-23T03:07:43.079Z] Error: EBUSY: resource busy or locked, open 'C:\Users\Makram Alabsi\ntuser.dat.LOG2'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-05-23T03:07:43.083Z] Error: EBUSY: resource busy or locked, open 'C:\Users\Makram Alabsi\ntuser.dat.LOG1'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-05-23T03:07:43.085Z] Error: EBUSY: resource busy or locked, open 'C:\Users\Makram Alabsi\NTUSER.DAT'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-05-23T03:07:43.559Z] Error: EISDIR: illegal operation on a directory, read
