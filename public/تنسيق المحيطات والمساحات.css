@@ -1,0 +1,46 @@
+.para{
+width: 220px;
+height: 120px;
+background-color: black;
+transform: skew(-20deg);
+}
+.triangle{
+width: 0;
+height: 0;
+
+border-left: 80px solid transparent;
+border-right: 80px solid transparent;
+border-bottom: 140px solid black;
+}
+.rectangle{
+width: 180px;
+height: 120px;
+background-color: black;
+}
+.diamond{
+    width: 120px;
+height: 120px;
+background-color: black;
+transform: rotate(-45deg);
+}
+.square{
+width: 120px;
+height: 120px;
+background-color: black;
+}
+.trapezoid{
+width: 160px;
+height: 0;
+
+border-bottom: 100px solid black;
+
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+}
+.circle{
+width: 120px;
+height: 120px;
+background-color: black;
+
+border-radius: 50%;
+}

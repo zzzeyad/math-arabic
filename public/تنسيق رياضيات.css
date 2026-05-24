@@ -70,6 +70,9 @@ text-align: justify;
   font-size: 20px;
   margin: 10px;     
 }
+.Q{
+  list-style-type: square;
+}
 .alhl{
   margin: 0;
 }
