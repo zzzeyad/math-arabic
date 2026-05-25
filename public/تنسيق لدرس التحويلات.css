@@ -1,0 +1,51 @@
+.box1{
+width: 100px;
+height: 100px;
+background-color: black;
+transition: 0.5s;
+}
+.box1:hover{
+    transform: translateX(-100px);
+}
+.wrap{
+display: flex;
+align-items: center;
+gap: 20px;
+}
+.box2{
+
+  width:0;
+  height:0;
+  border-top:40px solid transparent;
+  border-bottom:40px solid transparent;
+  border-left:80px solid black;
+
+}
+.line{
+width: 2px;
+height: 80px;
+background-color: red;
+}
+.mirror{
+transform: scaleX(-1);
+
+}
+
+.box3{
+width: 100px;
+height: 100px;
+background-color: black;
+transition: 0.5s;
+}
+.box3:hover{
+    transform: rotate(90deg);
+}
+.box4{
+width: 100px;
+height: 100px;
+background-color: black;
+transition: 0.5s;
+}
+.box4:hover{
+    transform: scale(1.5);
+}

@@ -106,29 +106,107 @@ background-color: #0B4F42;
 color: white;
 }
 
-@media (max-width: 768px) {
-.lll {
-width: 150px;
-min-width: 150px;
-font-size: 10px
+/*- فلسفة عشان الجوال
+/* --- كود تصفير وتأمين الشاشة (اكتبه مرة واحدة) --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.lll a {
-padding: 6px;
+body, html {
+    overflow-x: hidden; /* يمنع الصفحة تتحرك يمين ويسار غصب */
+    width: 100%;
+}
 
+/* --- تنسيق الجوال (كل تعديلاتك بكرة تكون داخل القوسين هذول) --- */
+@media screen and (max-width: 768px) {
+
+    .lessons {
+        display: flex !important;
+        flex-direction: row !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /* القائمة الخضراء تثبت مكانها بـ 30% */
+    .lll {
+        position: relative !important;
+        width: 30% !important;
+        max-width: 30% !important;
+        height: auto !important;
+        min-height: 100vh !important;
+        font-size: 11px !important;
+        padding: 5px !important;
+    }
+
+    /* المحتوى البيج: يأخذ 70% ويبتعد عن القائمة الخضراء عشان ما يندمج تحتها */
+    .mmm {
+        position: relative !important;
+        width: 70% !important;
+        max-width: 70% !important;
+        height: auto !important;
+        padding: 15px !important;
+        margin-right: 0 !important; /* نضمن مافي هوامش قديمة تخرّبه */
+        box-sizing: border-box !important;
+    }
+
+    /* هذا السحر عشان نجبر النص يبتعد عن الحافة اليمين والمستطيل الأخضر */
+    .mmm h1, .mmm h2, .mmm h3, .mmm p, .mmm span {
+        text-align: right !important; /* محاذاة النص لليمين */
+        padding-right: 10px !important; /* يدفع النص لليسار شوي عشان يظهر كامل */
+        word-wrap: break-word !important;
+        white-space: normal !important;
+    }
+
+    /* تصغير العناوين والنصوص */
+    .mmm h1 { font-size: 1.1rem !important; }
+    .mmm h2 { font-size: 1rem !important; }
+    .mmm p { font-size: 13px !important; line-height: 1.5 !important; }
+    /* --- كود حل مشكلة الجدول --- */
+    .table {
+        width: 100% !important;
+        overflow-x: auto !important; /* يشغل السحب والتمرير العرضي بالإصبع */
+        -webkit-overflow-scrolling: touch; /* يخلي الحركة ناعمة على شاشات الجوال */
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+        display: block !important; /* ضروري عشان يشتغل الـ overflow */
+    }
+
+    /* نجبر الجدول الفعلي داخل الديف إنه يأخذ مساحة مريحة ومستحيل ينكمش */
+    .table table {
+        min-width: 500px !important; /* يعطي أبعاد مريحة للخطوط والأعمدة */
+        width: 100% !important;
+    }
+
+    /* تعديل خفيف لخطوط الجدول عشان تطلع منسقة ومريحة داخل الـ 500 بكسل */
+    .table th, .table td {
+        font-size: 12px !important;
+        padding: 6px !important;
+        text-align: center !important;
+        white-space: nowrap !important; /* يمنع الكلمة الواحدة إنها تتقطع على سطرين */
+    }
+/* --- تصغير القوائم والنقاط داخل المحتوى البيج --- */
+    .mmm ul, .mmm ol, .mmm li {
+        font-size: 13px !important; /* نفس حجم خط الفقرات العادية عشان التناسق */
+        line-height: 1.5 !important;
+        padding-right: 15px !important; /* يعطي مسافة مريحة للنقاط من اليمين */
+        margin-bottom: 8px !important; /* مسافة خفيفة بين كل نقطة والثانية عشان ما يتلصقوا */
+    }
+/* تكبير العنوان الرئيسي للدرس */
+    .mmm h1 {
+        font-size: 1.4rem !important; /* كان 1.1 والآن صار أوضح وأكبر */
+        margin-bottom: 15px !important;
+        line-height: 1.3 !important;
+    }
+
+    /* تكبير العناوين الفرعية (مثل: ماهو المبتدأ، القانون، مثال) */
+    .mmm h2 {
+        font-size: 1.2rem !important; /* كان 1.0 والآن أخذ حجمه الممتاز */
+        margin-top: 15px !important;
+        margin-bottom: 10px !important;
+    }
 }
-.title{
-    font-size: 20px;
-}
-.word p{
-     font-size: 14px;
-}
-.word h2{
-     font-size: 16px;
-}
-.word ul{
-    font-size: 14px;
-}
-}
+
 .footer{
     text-align: left;
     
