@@ -108,15 +108,7 @@ color: white;
 
 /*- فلسفة عشان الجوال
 /* --- كود تصفير وتأمين الشاشة (اكتبه مرة واحدة) --- */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body, html {
-    overflow-x: hidden; /* يمنع الصفحة تتحرك يمين ويسار غصب */
-    width: 100%;
-}
+
 
 /* --- تنسيق الجوال (كل تعديلاتك بكرة تكون داخل القوسين هذول) --- */
 @media screen and (max-width: 768px) {

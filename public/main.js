@@ -537,7 +537,7 @@
 
         if(selectedValue === "correct"){
             score++;
-            resultDiv.innerText ="الاجابة صحيحة لان (0.5×6,0.5×5)=(3,2.5)";
+            resultDiv.innerText ="الاجابة صحيحة لان (5×6,0.5×0.5)=(3,2.5)";
             resultDiv.style.color= "green";
         }
         else{
