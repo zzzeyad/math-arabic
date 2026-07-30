@@ -419,11 +419,11 @@
         }
         if(selectedValue2 === "correct"){
             score++;
-             resultDiv2.innerText =" الاجابة صحيحة لان 360÷8=°45";
+             resultDiv2.innerText =" الاجابة صحيحة لان جميع المضلعات زواياها الخارجية تساوي °360";
              resultDiv2.style.color ="green";
         }
         else{
-             resultDiv2.innerText ="الاجابة خاطئة الاجابة الصحيحة هي:°45";
+             resultDiv2.innerText ="الاجابة خاطئة الاجابة الصحيحة هي:°360";
              resultDiv2.style.color ="red";
 
         }
